@@ -15,11 +15,11 @@ prixElement.innerText = `Prix: ${article.prix} $`;
 const categorieElement = document.createElement("p");
 categorieElement.innerText = article.categorie ?? "Aucune Catégorie";
 
-//Création des elements pour l'exercice 
+//Création des éléments pour l'exercice 
 const descriptionElement = document.createElement("p");
 descriptionElement.innerText = article.description ?? "Pas de description pour le moment";
 const stockElement = document.createElement("p");
-stockElement.innerText = article.disponibilite ? "En stock":"Rupture de stock";
+stockElement.innerText = article.disponibilite ? "En Stock" : "Rupture de stock";
 
 //Rattachement des balises au DOM
 const sectionFiches = document.querySelector(".fiches");
